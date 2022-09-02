@@ -1,0 +1,43 @@
+{
+  "schemaVersion": 1,
+  "id": "mothlib",
+  "version": "${version}",
+
+  "name": "MothLib",
+  "description": "A library mod containing a lot of useful resources for Minecraft mod developers!",
+  "authors": [
+    "Sydokiddo"
+  ],
+  "contact": {
+    "homepage": "https://www.curseforge.com/minecraft/mc-mods/mothlib",
+    "issues": "https://github.com/Sydokiddo/mothlib/issues",
+    "sources": "https://github.com/Sydokiddo/mothlib"
+  },
+
+  "license": "MIT",
+  "icon": "assets/mothlib/icon.png",
+
+  "environment": "*",
+
+  "entrypoints": {
+    "main": [
+      "net.sydokiddo.mothlib.MothLib"
+    ]
+  },
+  "mixins": [
+    "mothlib.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.13.3",
+    "fabric": "*",
+    "minecraft": "1.19.x",
+    "java": ">=17"
+  },
+  "suggests": {
+    "another-mod": "*"
+  },
+  "breaks": {
+    "optifine": "*",
+    "optifabric": "*"
+  }
+}
